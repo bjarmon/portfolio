@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <link rel="stylesheet" href="styles/aboutme.css">
+</head>
+
+<body>
+  <!--Sticky bar on top-->
+  <nav class="nav-bar">
+    <div class="blogsections" id="blog-sections">
+      <a href="index.html#brands">Brands</a>
+      <a href="index.html#collaborations">LV</a>
+      <a href="index.html#icons">Rappers</a>
+    </div>
+    <div class="homepage">
+      <a href="index.html" class="home-link">HOME</a>
+    </div>
+    <div class="aboutme">
+      <a href="aboutme.html" class="about-link">About Me</a>
+    </div>
+    <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+  </nav>
+
+  <!--JavaScript-->
+  <script>
+    function toggleMenu() {
+      document.getElementById("blog-sections").classList.toggle("active");
+    }
+
+    document.querySelectorAll("#blog-sections a").forEach(link => {
+      link.addEventListener("click", function () {
+        document.getElementById("blog-sections").classList.remove("active");
+      });
+    });
+  </script>
+  <div class="aboutmeparagraph">
+    <h1>About Me</h1>
+    <hr>
+    <p>Hi. My name is Ben Jarmon. I am a student at the University of Oregon, majoring in Business Administration. I am interested in the marketing side of business and making that my concentration. I am also currently I am taking a computer science class, learning how to code and make my very own website. My skills and knowledge in computer science have improved a lot from before this class.</p>
+    <p>Outside of school I am very passionate about fashion, art and being creative in general. Whether it be designing clothes, figures, fine art, graphic design or anything like that. I would love to be a designer in the future, mainly in fashion, and be able to live my life creatively and in the way I envision my life to be.</p>
+    <p>Other things I enjoy are sports like soccer and basketball. Both playing and watching are very fun for me. I also like to travel and hike. Even though I've only really gone hiking a few times, I'd love to do more of it in the future.</p>
+    <p> </p>
+    <p>Here's a link to my resume:</p>
+   <div class="resume" id="resumeid">
+    <a href="resume.html">Resume</a>
+   </div>
+  </div>
+</body>
+</html>

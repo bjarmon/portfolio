@@ -1,0 +1,197 @@
+* {
+    margin: 10px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace, Arial;
+}
+
+body{
+    background-color: rgb(255, 250, 245);
+    font-family: monospace, Arial;
+    background: url('/api/placeholder/1920/1080') center center fixed;
+   }
+
+   /* Top Bar */
+  a {
+    text-decoration: none;
+    color: rgb(255, 250, 245);
+    font-family: Arial, sans-serif;
+  }
+  
+  .nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(50, 25, 0);
+    overflow: visible;
+  }
+  
+  .homepage {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .blogsections {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .mobile-menu-btn {
+    display: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    .mobile-menu-btn {
+      display: block;
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      background: none;
+      border: none;
+      font-size: 24px;
+      z-index: 1100;
+    }
+
+    .nav-bar {
+      justify-content: center;
+    }
+    .aboutme {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    }
+    .blogsections {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 50px;  
+      left: 0;
+      width: 50%;  
+      background-color: #fff;
+      padding: 10px 0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+    }
+
+    .blogsections.active {
+      display: flex;
+    }
+
+    .blogsections a {
+      padding: 10px 20px;
+      border-bottom: 1px solid #ddd;
+    }
+    .blogsections a:last-child {
+      border-bottom: none;
+    }
+  }
+
+   /* Header styles */
+   header{
+    text-align: center;
+   }
+   h1{
+    color: rgb(50, 25, 0);
+    font-size: 50px;
+   }
+
+   /* Header and Footer separating line styles */
+   hr{
+    color: rgb(50, 25, 0);
+    background-color: rgb(127, 90, 58);
+    height: 5px;
+    border-width: 0;
+   }
+
+   /* Contact information styles */
+   img {
+    max-width: 25px;
+    vertical-align: middle;
+   }
+   .contact-link{
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+   }
+   .contact-link[href^="mailto"]{
+    color: rgb(127, 90, 58);
+   }
+   .contact-link[href^="tel"]{
+    color:rgb(127, 90, 58);
+   }
+   .contact-link[href^="https://www.instagram.com/ben.j4rmon/"]{
+    color: rgb(127, 90, 58);
+   }
+   .contact-link:hover{
+    color: rgb(50, 25, 0);
+    font-size: 1.2em;
+   }
+   
+   /* Body sections styles */
+   .container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+   }
+   section {
+    flex: 1 1 calc(50%);
+    min-width: 300px;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px;
+    margin-bottom: 0%;
+   }
+   section h2 {
+    color: rgb(50, 25, 0);
+   }
+   section h3{
+    color: rgb(50, 25, 0);
+   }
+   section p{
+    color: rgb(50, 25, 0);
+   }
+
+   /* Footer styles */
+   footer {
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(40, 20, 0);
+    font-size: 12px;
+   }
+   .Freepik[href^="http://www.freepik.com/"]{
+    color: rgb(50, 25, 0);
+    text-decoration: none;
+   }
+   .Freepik:hover{
+    color: rgb(127, 90, 58);
+   }
+
+   /* Device sizes */
+   @media (max-width: 768px) {
+    body {
+    padding: 10px;
+    }
+    section {
+    width: 100%;
+    }
+   }
+   @media (max-width: 375px) {
+    body {
+    padding: 10px;
+    }
+    section {
+    width: 100%;
+    }
+   }

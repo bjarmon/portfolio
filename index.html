@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fashion in Rap: A Style Revolution</title>
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+  <!--Sticky bar on top-->  
+  <nav class="nav-bar">
+    <div class="blogsections" id="blog-sections">
+      <a href="index.html#brands">Brands</a>
+      <a href="index.html#collaborations">LV</a>
+      <a href="index.html#icons">Rappers</a>
+    </div>
+    <div class="homepage">
+      <a href="index.html" class="home-link">HOME</a>
+    </div>
+    <div class="aboutme">
+      <a href="aboutme.html" class="about-link">About Me</a>
+    </div>
+    <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+  </nav>
+
+  <!--JavaScript-->
+  <script>
+    function toggleMenu() {
+      document.getElementById("blog-sections").classList.toggle("active");
+    }
+
+    document.querySelectorAll("#blog-sections a").forEach(link => {
+      link.addEventListener("click", function () {
+        document.getElementById("blog-sections").classList.remove("active");
+      });
+    });
+  </script>
+  
+  <!--Banner-->
+  <header>
+    <div class="container">
+      <h1>Fashion in Rap</h1>
+      <p>Exploring how rap culture is redefining modern fashion.</p>
+    </div>
+  </header>
+  
+  <!--Impact and influence-->
+  <section id="intro">
+    <div class="container">
+      <h2>Introduction</h2>
+      <p>Rap has had a major impact and influence on the fashion industry, creating trends, brand identities and the way people view luxury pieces. Rappers brought street style into high fashion, creating new styles, individual brands, uniques pieces and bringing a new perspective in. Luxury houses that once ignored hip-hop culture now want to bring in rappers as ambassadors and creative partners. Past just trends, rap has changed the idea of who gets to define fashion, making it more diverse, expressive, and culturally relevant.</p>
+    </div>
+  </section>
+  
+  <!--Known Brands-->
+  <section id="brands">
+    <div class="container">
+      <h2>Brands in Rap Fashion</h2>
+      <div class="brand-grid">
+        <div class="brand-item brand1">
+          <div class="image-container">
+            <img src="images/GOLFleFleur.jpg" alt="Golf Wang & Golf le Fleur">
+            <div class="overlay">
+              <p>GOLF WANG / GOLF le FLEUR</p>
+              <p>Created by: Tyler, the Creator</p>
+            </div>
+          </div>
+          <h3>GOLF WANG</h3>
+          <h3>GOLF le FLEUR</h3>
+          <p>Golf Wang, Tyler, the Creator's first streetwear brand and GOLF le FLEUR his current one show the creativity and growth of Tyler as a person and artist.</p>
+        </div>
+        <div class="brand-item brand2">
+          <div class="image-container">
+            <img src="images/yeezy.png" alt="Yeezy">
+            <div class="overlay">
+              <p>YEEZY</p>
+              <p>Created by: Kanye West</p>
+            </div>
+          </div>
+          <h3>YEEZY</h3>
+          <p>YEEZY is Kanye West's brand that started out as a collab with Adidas, quickly becoming one of the biggest streetwear brands. Even now after the Adidas collab fell it is still very popular.</p>
+        </div>
+        <div class="brand-item brand3">
+          <div class="image-container">
+            <img src="images/VLONE.png" alt="VLONE">
+            <div class="overlay">
+              <p>VLONE</p>
+              <p>Created by: A$AP Bari</p>
+            </div>
+          </div>
+          <h3>VLONE</h3>
+          <p>VLONE, created by A$AP Bari from the A$AP Mob was at a time one of the biggest streetwear brands in the market. With help from A$AP Rocky in growing popularity for the Mob it quickly grew alongside.</p>
+        </div>
+        <div class="brand-item brand4">
+          <div class="image-container">
+            <img src="images/cactusjack.jpg" alt="Cactus Jack">
+            <div class="overlay">
+              <p>CACTUS JACK</p>
+              <p>Created by: Travis Scott</p>
+            </div>
+          </div>
+          <h3>CACTUS JACK</h3>
+          <p>While most known for his collaborations with Nike, especially with his signature backward swoosh sneakers, Travis Scott does have his own brand, Cactus Jack.</p>
+        </div>
+        <div class="brand-item brand5">
+          <div class="image-container">
+            <img src="images/OffWhite.jpg" alt="Off-White">
+            <div class="overlay">
+              <p>OFF-WHITE</p>
+              <p>Created by: Virgil Abloh</p>
+            </div>
+          </div>
+          <h3>OFF-WHITE</h3>
+          <p>Virgil Abloh's Off-White, first named as Pyrex Vision, is a brand he made to create innovative streetwear with high fashion redefining luxury and a whole style itself.</p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  
+  <!--Louis Vuitton-->
+  <section id="collaborations">
+    <div class="container">
+      <h2>Louis Vuitton</h2>
+      <p>Virgil Abloh was a big influence for street culture entering high fashion. As the first Black artistic director at the brand, he brought in hip-hop, skate, and contemporary art to create a new and unique style that represents his culture. This also left a deeper message about diversity and bringing more people in. After Virgil passed in 2021, the new and current director Pharrell Williams was brought in. Pharrell has always been in the rap and fashion scene, as a very well known producer and artist in the rap game, but also creating his own line HumanRace in the fashion industry. While people are still waiting for him to bring a style a bit more new and innovative to Louis Vuitton, he has been doing a pretty good job so far.</p>
+    </div>
+  </section>
+  
+  <!--Top 3 Best dressed-->
+  <section id="icons">
+    <div class="container">
+      <h2>Rappers with Best Style</h2>
+      <div class="rappers-grid">
+        <div class="rappers">
+          <p>"Rap fashion is a form of self-expression that goes beyond clothing."</p>
+          <p>-Lil Yatchy</p>
+          <img src="images/YatchyOutfit.jpeg" alt="Lil Yatchy Outfit">
+        </div>
+        <div class="rappers">
+          <p>"Bold, fearless, and always innovative—that's the spirit of rap style."</p>
+          <p>- A$AP Rocky</p>
+          <img src="images/RockyOutfit.avif" alt="A$AP Rocky Outfit">
+        </div>
+        <div class="rappers">
+          <p>"I see fashion as art, and rap provides the canvas for creative freedom."</p>
+          <p>- Tyler, the Creator</p>
+          <img src="images/TylerOutfit.jpg" alt="Tyler, the Creator Outfit">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!--Signup-->
+  <section class="signup">
+    <button onclick="document.getElementById('signup-form').style.display='block'">Sign Up</button>
+    <div id="signup-form" class="form-popup">
+        <form class="form-container">
+            <h2>Sign Up for More</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="fullname" placeholder="Type here" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Type here" required> 
+            
+            <button type="submit" class="btn">Submit</button>
+            <button type="button" class="btn cancel" onclick="document.getElementById('signup-form').style.display='none'">Close</button>
+        </form>
+    </div>
+  </section>
+  
+  <!--Footer-->
+  <footer>
+    <div class="container">
+      <h2>Stay Connected</h2>
+      <p>Follow us for more insights and exclusive content on the ever-evolving world of rap and fashion.</p>
+      <small>&copy; 2025 Fashion in Rap. All Rights Reserved.</small>
+    </div>
+  </footer>
+  
+</body>
+</html>
